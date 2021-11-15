@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    font-size: 62.5%;
+    --oxford-blue: #0B132B;
+    --floral-white: #faf5e5;
+    --blue-green: #468FAF;
+    --white: #ffffff;
+    --bg: #f8f8f0;
+}
+
+body {
+    background: var(--bg);
+}
+
+.header .menu-bg {
+    background: var(--oxford-blue);
+}
+
+.header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 8rem;
+    max-width: 96rem;
+    margin: 0 auto;
+    color: var(--white);
+}
+
+@media only screen and (max-width: 443px) {
+    .header .menu {
+        justify-content: center;
+    }
+}
+
+.menu-logo a {
+    color: var(--white);
+    font: 600 1.8rem 'Poppins', sans-serif;
+    padding-left: 1rem;
+}
+
+.menu .menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+@media only screen and (max-width: 300px) {
+    .menu .menu-nav ul {
+        justify-content: center;
+    }
+}
+
+.menu-nav ul a {
+    color: var(--white);
+    padding: 1rem;
+    font: 500 1.4rem 'Poppins', sans-serif;
+}
+
+.menu-nav ul a:hover {
+    color: var(--floral-white);
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.introduction .intro-img {
+    width: 100%;
+    min-height: 50rem;
+    background: 35% no-repeat url(../imgs/front.jpg) var(--blue-green);
+    background-blend-mode: multiply;
+}
+
+.introduction .intro-text {
+    padding: 0 1rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    color: var(--white);
+}
+
+.intro-text h1 {
+    font-size: 4.8rem;
+}
+
+.intro-text div {
+    font-size: 2.4rem;
+}
+
+.main h2 {
+    font: 400 1.8rem 'Poppins', sans-serif;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-top: 1rem solid var(--blue-green);
+    border-bottom: 1rem solid var(--blue-green);
+}
+
+.main .movies-in-theaters .venom {
+    background: center / cover no-repeat url(../imgs/venom.jpg);
+}
+
+.main .movies-in-theaters .shang-chi {
+    background: center / cover no-repeat url(../imgs/shang-chi.jpg);
+}
+
+.main .movies-in-theaters .eternals {
+    background: center / cover no-repeat url(../imgs/eternals.jpg);
+}
+
+.main .movies-in-theaters .movie {
+    height: 50rem;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+    .main .movies-in-theaters .movie {
+        background-attachment: scroll;
+    }
+}
+
+.main .movies-in-theaters .movie-description {
+    padding: 1rem;
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+.main .movies-in-theaters p {
+    font-size: 1.4rem;
+    text-align: justify;
+    padding-bottom: 1rem;
+}
+
+.footer {
+    background: var(--oxford-blue);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.footer .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 96rem;
+    margin: 0 auto;
+    height: 8rem;
+}
+
+.details .menu-logo {
+    padding-left: 0;
+}
+
+.details .social-media-text {
+    font-size: 1.4rem;
+}
+
+.details .social-media-icons img {
+    width: 3.2rem;
+}
+
+.footer .copyright {
+    text-align: center;
+    font-size: 1.4rem;
+}
